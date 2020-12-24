@@ -12,7 +12,7 @@ Watch my *[DEMO VIDEOS](https://drive.google.com/drive/folders/1LevFBGfzBl-NXpf8
 * [MyPhotoshop](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/python%20photoshop/stanCodoshop.py)
   * image processing
 * [Breakout Game](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/breakout%20game/breakout.py)
-  * animation & game designing
+  * animation & game design
 * [Name Popularity Searching System](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/name_searching_program/babygraphics.py)
   * data structure
 * [Boggle Game Solver](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/boogle_game/boggle.py)
