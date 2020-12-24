@@ -130,19 +130,42 @@ class BreakoutGraphics:
         else:
             self.paddle.x = self.window_width - self.paddle.width
 
-    #let user can get the velocity of the ball
+    # let user can get the velocity of the ball
     def get_dx(self):
         return self.__dx
 
     def get_dy(self):
         return self.__dy
 
-    #start the game after clicking
+    # start the game after clicking
     def start(self, event):
         if self.ball.x == (self.window_width-self.ball_radius*2)/2 and \
                 self.ball.y == (self.window_height-self.ball_radius*2)/2:
             if 0 <= event.x <= self.window_width and 0 <= event.y <= self.window_height:
                 self.switch = True
+
+    # check if ball hit anything
+    def check_hit(self):
+        self.obj = self.window.get_object_at(self.ball.x, self.ball.y)
+        if self.obj is None:
+            self.obj = self.window.get_object_at(self.ball.x, self.ball.y + self.ball_radius * 2)
+            if self.obj is None:
+                self.obj = self.window.get_object_at(self.ball.x + self.ball_radius * 2, self.ball.y)
+                if self. obj is None:
+                    self.obj = self.window.get_object_at(self.ball.x + self.ball_radius * 2, self.ball.y + self.ball_radius * 2)
+                    if self.obj is None:
+                        return False
+        return True
+
+    # check if ball hit brick
+    def hit(self):
+        if self.obj is not self.paddle:
+            return True
+        else:
+            return False
+
+
+
 
 
 

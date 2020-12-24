@@ -10,7 +10,7 @@ YOUR DESCRIPTION HERE
 from campy.gui.events.timer import pause
 from breakoutgraphics import BreakoutGraphics
 
-FRAME_RATE = 1000 / 120 # 120 frames per second.
+FRAME_RATE = 1000/120 # 120 frames per second.
 NUM_LIVES = 3
 
 
@@ -27,11 +27,6 @@ def main():
             dx = graphics.get_dx()
             dy = graphics.get_dy()
             while True:
-                up_left = graphics.window.get_object_at(graphics.ball.x, graphics.ball.y)
-                down_left = graphics.window.get_object_at(graphics.ball.x, graphics.ball.y + graphics.ball_radius * 2)
-                up_right = graphics.window.get_object_at(graphics.ball.x + graphics.ball_radius * 2, graphics.ball.y)
-                down_right = graphics.window.get_object_at(graphics.ball.x + graphics.ball_radius * 2, \
-                                                           graphics.ball.y + graphics.ball_radius * 2)
                 graphics.ball.move(dx, dy)
                 # game over when user runs out of lives and break all the bricks
                 if num_brick == 0 or out == NUM_LIVES:
@@ -52,38 +47,11 @@ def main():
                         graphics.switch = False
                         break
                     # check if the ball hits anything. If yes, will remove the object if it's a brick.
-                    if up_left is not None:
-                        if up_left is not graphics.paddle:
-                            graphics.window.remove(up_left)
+                    if graphics.check_hit():
+                        if graphics.hit():
+                            graphics.window.remove(graphics.obj)
                             num_brick -= 1
-                            dy = -dy
-                        else:
-                            if dy > 0:
-                                dy = -dy
-                    elif down_left is not None:
-                        if down_left is not graphics.paddle:
-                            graphics.window.remove(down_left)
-                            num_brick -= 1
-                            dy = -dy
-                        else:
-                            if dy > 0:
-                                dy = -dy
-                    elif up_right is not None:
-                        if up_right is not graphics.paddle:
-                            graphics.window.remove(up_right)
-                            num_brick -= 1
-                            dy = -dy
-                        else:
-                            if dy > 0:
-                                dy = -dy
-                    elif down_right is not None:
-                        if down_right is not graphics.paddle:
-                            graphics.window.remove(down_right)
-                            num_brick -= 1
-                            dy = -dy
-                        else:
-                            if dy > 0:
-                                dy = -dy
+                        dy *= -1
                     pause(FRAME_RATE)
 
 
