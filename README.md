@@ -1,6 +1,6 @@
 ## *stanCode* Projects
 Hi there :)\
-This respository holds my projects done during the period of stanCode courses!
+This respository holds my projects during stanCode courses!
 
 Watch my *[DEMO VIDEOS](https://drive.google.com/drive/folders/1LevFBGfzBl-NXpf8UFNnatO44wxa4WmG?usp=sharing)*
 
