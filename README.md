@@ -19,5 +19,7 @@ Watch my *[DEMO VIDEOS](https://drive.google.com/drive/folders/1LevFBGfzBl-NXpf8
   * recursive functions
 * [Find Anagram](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/find_anagram/anagram.py)
   * recursive functions
+* [Movie Reivew](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/movie_review/interactive.py)
+  * AI in review segmentation
 * [Rock-Paper-Scissors Game](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/Rock-Paper-Scissors%20Game/RPS_Play.py)
-  * CNN AI game
+  * AI in image recognition
