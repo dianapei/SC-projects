@@ -1,5 +1,5 @@
 """
-File: titanic_level1.py
+File: titanic.py
 Name: Pei-Rung Yu
 ----------------------------------
 This file builds a machine learning algorithm from scratch 
