@@ -19,6 +19,8 @@ Watch my *[DEMO VIDEOS](https://drive.google.com/drive/folders/1LevFBGfzBl-NXpf8
   * recursive functions
 * [Find Anagram](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/find_anagram/anagram.py)
   * recursive functions
+* [Titanic](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/Titanic/titanic.py)
+  * build model from scratch to reach top 15% of the world on Kaggle Titanic competition
 * [Movie Reivew](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/movie_review/interactive.py)
   * AI in review segmentation
 * [Rock-Paper-Scissors Game](https://github.com/dianapei/SC-projects/blob/main/stanCode%20projects/Rock-Paper-Scissors%20Game/RPS_Play.py)
